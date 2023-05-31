@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #C0B6B6;
+}
+
+.logo__img {
+    width: 50px; 
+    /* height: 20px; */
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+    /* margin-top: -1px; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: none;
+}
