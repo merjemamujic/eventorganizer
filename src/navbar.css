@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,400;0,500;1,300&family=Lora:wght@500&display=swap');
+
 *,
 *::after,
 *::before {
@@ -25,12 +26,12 @@ a {
     color: #C0B6B6;
     font-size: 2rem;
 }
-     
- .logo__img {
+
+.logo__img {
     width: 20px;
 }
 
-       
+
 .nav {
     display: flex;
     align-items: center;
@@ -39,7 +40,7 @@ a {
     /* background: #141412;
     opacity: 0.6; */
     color: transparent;
-} 
+}
 
 .nav__menu {
     display: flex;
@@ -57,13 +58,16 @@ a {
     border: none;
 }
 
-/* novi dio za hover state */
-.nav ul li a:hover{
-    color: #C0B6B6;
-    border-radius: 6px;
-}
-.nav ul li a:active{
+.active {
     color: black;
+    opacity: 0.6;
+}
+
+li a:hover {
+    border-bottom: 2px solid #4f4b4b;
+    /* or whatever colour you'd prefer */
+    padding-bottom: 2px;
+    transition: .1s;
 }
 
 .nav__toggler div {
@@ -94,22 +98,24 @@ a {
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.5s ease-in;
-        
+
     }
 }
 
 /* Nav Active Class */
-.nav__active{
+.nav__active {
     transform: translateX(0);
 }
 
 /* Toggler Icon Animation */
-.toggle .line1{
+.toggle .line1 {
     transform: rotate(-45deg) translate(-4px, 5px);
 }
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
-.toggle .line3{
+
+.toggle .line3 {
     transform: rotate(45deg) translate(-4px, -5px);
 }
